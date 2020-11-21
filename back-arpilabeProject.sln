@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "back-arpilabeProject", "back-arpilabeProject.csproj", "{76495DBD-BB35-415E-B96B-23377DD6F02F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76495DBD-BB35-415E-B96B-23377DD6F02F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76495DBD-BB35-415E-B96B-23377DD6F02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76495DBD-BB35-415E-B96B-23377DD6F02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76495DBD-BB35-415E-B96B-23377DD6F02F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E2AF694-B563-424C-9C34-6B2A9318A838}
+	EndGlobalSection
+EndGlobal
