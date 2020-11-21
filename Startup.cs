@@ -28,6 +28,11 @@ namespace back_arpilabeProject
         {
             services.AddDbContext<AplicationDbContext>(options => options.UseMySql(Configuration.GetConnectionString("Conexion")));
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            });
+
             services.AddControllers();
         }
 
@@ -38,6 +43,8 @@ namespace back_arpilabeProject
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors("CorsPolicy");
 
             app.UseHttpsRedirection();
 
