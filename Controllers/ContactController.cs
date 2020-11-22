@@ -64,7 +64,7 @@ namespace back_arpilabeProject.Controllers
         // POST api/values
         [HttpPost]
 
-        public ActionResult Post([FromBody] string contact)
+        public ActionResult Post([FromBody] Contact contact)
         {
             try
             {
