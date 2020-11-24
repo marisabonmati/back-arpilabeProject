@@ -46,8 +46,9 @@ namespace back_arpilabeProject.Migrations
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<int>("telephone")
-                        .HasColumnType("int");
+                    b.Property<string>("Telephone")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("Id");
 

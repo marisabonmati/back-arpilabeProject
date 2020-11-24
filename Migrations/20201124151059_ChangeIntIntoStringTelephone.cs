@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace back_arpilabeProject.Migrations
 {
-    public partial class Initial : Migration
+    public partial class ChangeIntIntoStringTelephone : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,7 @@ namespace back_arpilabeProject.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    telephone = table.Column<int>(nullable: false),
+                    Telephone = table.Column<string>(nullable: false),
                     Nom = table.Column<string>(nullable: false),
                     Prenom = table.Column<string>(nullable: false),
                     Email = table.Column<string>(nullable: false),

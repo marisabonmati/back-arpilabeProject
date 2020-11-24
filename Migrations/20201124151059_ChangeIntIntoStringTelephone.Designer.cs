@@ -9,8 +9,8 @@ using back_arpilabeProject;
 namespace back_arpilabeProject.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
-    [Migration("20201121194816_Initial")]
-    partial class Initial
+    [Migration("20201124151059_ChangeIntIntoStringTelephone")]
+    partial class ChangeIntIntoStringTelephone
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -48,8 +48,9 @@ namespace back_arpilabeProject.Migrations
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<int>("telephone")
-                        .HasColumnType("int");
+                    b.Property<string>("Telephone")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("Id");
 
