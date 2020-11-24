@@ -12,7 +12,7 @@ namespace back_arpilabeProject.Models
         public int Id { get; set; }
         [Required]
 
-        public int Telephone { get; set; }
+        public string Telephone { get; set; }
         [Required]
 
         public string Nom { get; set; }
